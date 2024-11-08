@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Servicios de impresión 3D personalizados para prototipos, modelos y más.">
+    <title>OCVA3D - Realiza tu Pedido de Impresión 3D</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Encabezado -->
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#servicios">Servicios</a></li>
+                <li><a href="#galeria">Galería</a></li>
+                <li><a href="#contacto">Realizar Pedido</a></li>
+            </ul>
+        </nav>
+        <div class="hero">
+            <h1>OCVA3D - Impresión 3D Personalizada</h1>
+            <p>Transformamos tus ideas en modelos físicos de alta precisión. ¡Haz tu pedido hoy mismo!</p>
+            <a href="#contacto" class="cta-button">Realiza tu Pedido</a>
+        </div>
+    </header>
+
+    <!-- Sección de Servicios -->
+    <section id="servicios">
+        <h2>Servicios de Impresión 3D</h2>
+        <div class="service">
+            <h3>Prototipos</h3>
+            <p>Creamos prototipos precisos para tus ideas y productos, ayudándote a llevar tu proyecto al siguiente nivel.</p>
+        </div>
+        <div class="service">
+            <h3>Modelos Personalizados</h3>
+            <p>Realizamos modelos 3D personalizados según tus necesidades, desde piezas industriales hasta objetos creativos.</p>
+        </div>
+        <div class="service">
+            <h3>Escaneado 3D</h3>
+            <p>Digitalizamos objetos del mundo real para crear modelos tridimensionales con alta precisión.</p>
+        </div>
+    </section>
+
+    <!-- Sección de Galería -->
+    <section id="galeria">
+        <h2>Galería de Proyectos</h2>
+        <div class="gallery">
+            <img src="imagen1.jpg" alt="Prototipo impreso 3D">
+            <img src="imagen2.jpg" alt="Modelo 3D personalizado">
+            <img src="imagen3.jpg" alt="Escaneado 3D">
+            <img src="imagen4.jpg" alt="Diseño industrial impreso en 3D">
+        </div>
+    </section>
+
+    <!-- Sección de Contacto (Formulario de Pedido) -->
+    <section id="contacto">
+        <h2>Realiza tu Pedido</h2>
+        <p>Por favor, completa el siguiente formulario con los detalles de tu pedido. Nos pondremos en contacto contigo para confirmar los detalles y cotización.</p>
+
+        <form action="#" method="POST">
+            <label for="nombre">Nombre Completo:</label>
+            <input type="text" id="nombre" name="nombre" required>
+
+            <label for="email">Correo Electrónico:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="producto">Descripción del Producto:</label>
+            <textarea id="producto" name="producto" rows="4" required></textarea>
+
+            <label for="material">Tipo de Material:</label>
+            <select id="material" name="material" required>
+                <option value="">Selecciona el material</option>
+                <option value="PLA">PLA (Plástico)</option>
+                <option value="ABS">ABS (Plástico Resistente)</option>
+                <option value="PETG">PETG (Plástico Transparente)</option>
+                <option value="Resina">Resina</option>
+                <option value="Metal">Metal</option>
+                <option value="Otro">Otro</option>
+            </select>
+
+            <label for="cantidad">Cantidad:</label>
+            <input type="number" id="cantidad" name="cantidad" min="1" required>
+
+            <label for="plazo">Fecha de Entrega Deseada:</label>
+            <input type="date" id="plazo" name="plazo" required>
+
+            <label for="comentarios">Comentarios Adicionales:</label>
+            <textarea id="comentarios" name="comentarios" rows="4"></textarea>
+
+            <button type="submit">Enviar Pedido</button>
+        </form>
+    </section>
+
+    <!-- Pie de página -->
+    <footer>
+        <p>&copy; 2024 OCVA3D - Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>
